@@ -1,0 +1,87 @@
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .stopwatch {
+            background: #fff;
+            padding: 2rem 3rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .time {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            letter-spacing: 2px;
+        }
+        .controls button {
+            font-size: 1rem;
+            padding: 0.5rem 1.2rem;
+            margin: 0 0.5rem;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .btn.start {
+          background: #63bf6f;   /* light green */
+          color: #222;
+        }
+        .btn.start:hover {
+          background: #26d626;   /* green */
+          color: #fff;
+        }
+
+        .btn.pause {
+          background: #ff7272;   /* light red */
+          color: #222;
+        }
+        .btn.pause:hover {
+          background: #ff2222;   /* red */
+          color: #fff;
+        }
+
+        .btn.reset {
+          background: #9ec5ff;   /* light blue */
+          color: #222;
+        }
+        .btn.reset:hover {
+          background: #227cff;   /* blue */
+          color: #fff;
+        }
+
+        .btn.lap {
+          background: #fff68e;   /* light yellow */
+          color: #222;
+        }
+        .btn.lap:hover {
+          background: #ffe600;   /* yellow */
+          color: #222;
+        }
+
+        .controls button:hover {
+            background: #949696;
+        }
+        .laps {
+            margin-top: 1.5rem;
+            max-height: 200px;
+            overflow-y: auto;
+            text-align: left;
+        }
+        .laps ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .laps li {
+            padding: 0.3rem 0;
+            border-bottom: 1px solid #eee;
+            font-size: 1rem;
+        }
